@@ -33,7 +33,13 @@ function App() {
           <DashBtn />
         </Route>
         <Route path = '/Dash' component={Dash}></Route>
-        <Route path = '' component={Error_Page}></Route>
+        <Route path = '' ><Intro />
+          <Prevention />
+          <Symptoms />
+          <Vaccine />
+          <Contact />
+          <Footer />
+          <DashBtn /></Route>
 
       </Switch>
     </div>
