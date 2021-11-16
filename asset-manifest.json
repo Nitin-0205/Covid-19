@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/Covid-19/static/css/main.2e459975.chunk.css",
+    "main.js": "/Covid-19/static/js/main.75d64085.chunk.js",
+    "main.js.map": "/Covid-19/static/js/main.75d64085.chunk.js.map",
+    "runtime-main.js": "/Covid-19/static/js/runtime-main.897eaa92.js",
+    "runtime-main.js.map": "/Covid-19/static/js/runtime-main.897eaa92.js.map",
+    "static/css/2.7fc9bc2b.chunk.css": "/Covid-19/static/css/2.7fc9bc2b.chunk.css",
+    "static/js/2.1250da42.chunk.js": "/Covid-19/static/js/2.1250da42.chunk.js",
+    "static/js/2.1250da42.chunk.js.map": "/Covid-19/static/js/2.1250da42.chunk.js.map",
+    "index.html": "/Covid-19/index.html",
+    "static/css/2.7fc9bc2b.chunk.css.map": "/Covid-19/static/css/2.7fc9bc2b.chunk.css.map",
+    "static/css/main.2e459975.chunk.css.map": "/Covid-19/static/css/main.2e459975.chunk.css.map",
+    "static/js/2.1250da42.chunk.js.LICENSE.txt": "/Covid-19/static/js/2.1250da42.chunk.js.LICENSE.txt",
+    "static/media/Covaxin.d4d82298.jpg": "/Covid-19/static/media/Covaxin.d4d82298.jpg",
+    "static/media/Covishield.388cbc67.jpg": "/Covid-19/static/media/Covishield.388cbc67.jpg",
+    "static/media/Error404.a253c599.gif": "/Covid-19/static/media/Error404.a253c599.gif",
+    "static/media/about_img.1d0ed1e7.jpg": "/Covid-19/static/media/about_img.1d0ed1e7.jpg",
+    "static/media/cold.bec523a0.jpg": "/Covid-19/static/media/cold.bec523a0.jpg",
+    "static/media/covid_logo2.e7698393.png": "/Covid-19/static/media/covid_logo2.e7698393.png",
+    "static/media/doctor.c8240714.gif": "/Covid-19/static/media/doctor.c8240714.gif",
+    "static/media/headach.f430c410.jpg": "/Covid-19/static/media/headach.f430c410.jpg",
+    "static/media/home_back.099b44cc.png": "/Covid-19/static/media/home_back.099b44cc.png",
+    "static/media/sick.4a5f38e5.gif": "/Covid-19/static/media/sick.4a5f38e5.gif",
+    "static/media/sick.ba705471.png": "/Covid-19/static/media/sick.ba705471.png",
+    "static/media/social-distancing.acc4a3e0.gif": "/Covid-19/static/media/social-distancing.acc4a3e0.gif",
+    "static/media/stay-safe.e12da8a2.gif": "/Covid-19/static/media/stay-safe.e12da8a2.gif",
+    "static/media/suptnik.14211165.jpg": "/Covid-19/static/media/suptnik.14211165.jpg",
+    "static/media/wash_hand.924f753b.gif": "/Covid-19/static/media/wash_hand.924f753b.gif",
+    "static/media/were_mask.bdf3806d.gif": "/Covid-19/static/media/were_mask.bdf3806d.gif",
+    "static/media/work_home.bbd35ea5.gif": "/Covid-19/static/media/work_home.bbd35ea5.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.897eaa92.js",
+    "static/css/2.7fc9bc2b.chunk.css",
+    "static/js/2.1250da42.chunk.js",
+    "static/css/main.2e459975.chunk.css",
+    "static/js/main.75d64085.chunk.js"
+  ]
+}
