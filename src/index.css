@@ -1,13 +1,1081 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior:smooth;
+}
+/* Header  */
+.Head{
+    width: 100%;
+    padding:1rem 1rem;
+    box-shadow:0 5px 5px lightgreen;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo h1{
+    font-size: 3rem;
+    font-family:sans-serif;
+    cursor: pointer;
+}
+.logo h1 span{
+    color: rgb(247, 54, 54);
+
+}
+.logo img{
+    height: 2.5rem;
+    animation:alp linear 4s infinite;
+}
+@keyframes alp{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+.dropDown{
+    font-size: 1.1rem;
+    padding:0.3rem 0.5rem;
+    outline:none;
+    color:green;
+    display: none;
+    margin-right: 0.2rem;
+    background-color: rgb(200, 245, 200);
+}
+.dropDown:hover{
+    box-shadow: 2px 2px 5px lightgreen;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#Dropdown_menu{
+    display:flex;
+    gap:1rem;
+    margin-right: 1rem;
+}
+.Head ul >li{
+    list-style: none;
+}
+.Head ul li >a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color:green;
+    padding:0.7rem 1rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.Head ul a:hover , .Head ul a:active{
+    border-bottom: 2px solid teal;
+    font-size:1.1rem;
+    box-shadow: 0px 4px 10px rgba(49, 153, 153, 0.65);
+}
+.main{
+    width:100vw;
+}
+
+#DashBtn{
+    max-width:4rem;
+    height:4rem;
+    padding: 0.1rem;
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    background-color: orange;
+    border-radius: 4rem;
+    transition: 2s;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#DashBtn a{
+    text-decoration: none;
+    color:white;
+    font-size: 2rem;
+    padding: 0.2rem 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#DashBtn a .DashBtntxt{
+    font-size: 0.8rem;
+    transition: 0.8s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 0.7rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    word-spacing: 0.2rem;
+    display: none;
+    white-space: nowrap;
+}
+#DashBtn:hover .DashBtntxt{
+    display: inline-block;
+}
+#DashBtn:hover {
+    max-width: 100%;
+}
+/* Section 1 */
+
+/* Home */
+
+.home {
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    padding:3rem 5rem;
+    align-items: center;
+    overflow: hidden;
+}
+.home_text{
+    width: 60%;
+    padding: 1rem 0;
+}
+.home_text h1{
+    font-size: 3.4rem;
+    color:rgb(16, 109, 104);
+    text-shadow: 3px 3px 6px rgb(108, 183, 185);
+    text-transform: uppercase;
+}
+.home_text h1 span{
+    font-size: 1.8rem;
+    color:rgb(240, 49, 49);
+}
+.home_text p{
+    padding: 2rem 0;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    line-height: 2.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.home_text a{
+    text-decoration: none;
+    padding: 0.5rem 1.2rem;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    background-color:rgb(51, 172, 228);
+    color: white;
+    display:inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    border-style: none;
+}
+.home_text a span{
+    font-size: 2rem;
+}
+.home_text  a:hover ,.home_text  a:hover a:active{
+    background-color:rgb(12, 123, 175); 
+}
+
+.home_img_cont{
+    width:60vw;
+}
+.home_img{
+    width:100%;
+}
+
+/* About */
+
+
+.about {
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    padding:3.2rem 5rem;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    box-shadow: inset  0 0 20px 3px gray;
+    overflow: hidden;
+
+}
+.about_text{
+    width: 60%;
+    padding: 3rem 0;
+}
+.abt_dis{
+    color: rgb(0, 107, 230);
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: sans-serif;
+    word-spacing: 5px;
+
+}
+.about_text h1{
+    font-size: 2.9rem;
+    color:rgba(190, 80, 223, 0.801);
+    word-spacing: 1rem;
+    padding-bottom: 2rem;
+}
+.about_text p{
+    padding: 0rem 0 1rem 0;
+    font-size: 1rem;
+    line-height: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(3, 110, 3);
+}
+.about_img_cont{
+    width:50vw;
+}
+.about_img{
+    width:100%;
+}
+
+/* Doctor */
+
+.Intro {
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    padding:2rem 5rem;
+    background-color: rgba(211, 211, 211, 0.493);
+    align-items: center;
+    overflow: hidden;
+
+}
+.Int_text{
+    width: 60%;
+    padding: 3rem 0;
+}
+.Int_text h1{
+    text-align: center;
+    font-size: 3.5rem;
+    color:rgb(16, 109, 104);
+    text-shadow: 3px 3px 6px rgb(108, 183, 185);
+    word-spacing: 1rem;
+}
+.Int_text p{
+    padding: 2rem;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    line-height: 2.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.Doct_img_cont{
+    width:35vw;
+}
+.Doct_img{
+    width:100%;
+}
+
+/* Section 2 */
+
+.card_section{
+    width:100%;
+    padding: 2rem 2rem 10rem 2rem;
+    box-shadow: inset 0px 0px 50px lightskyblue;
+    overflow: hidden;
+
+}
+.card_section h1{
+    text-align: center;
+    font-size: 3.6rem;
+    padding: 2rem 0;
+    color: rgb(77, 212, 77);
+    text-shadow: 1px 2px 5px lightskyblue;
+
+}
+.card_section h1 span{
+    color:red;
+}
+.cards_contain{
+    width:100%;    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.cards{
+    width:25vw;
+    background-color:rgb(191, 230, 231);
+    border-radius: 0.5rem ;
+    box-shadow: 3px 5px 10px lightslategray;
+    overflow: hidden;
+    margin-top: 3.5rem;
+    cursor:pointer;
+    position: relative;
+    height: 27rem;
+    transition:all 0.5s ease-out 0.2s;
+    transform-style: preserve-3d;
+
+
+}
+.cards:hover{
+    transform: scale(105%);
+    box-shadow: 3px 5px 10px teal;
+    transform:rotateY(180deg);
+}
+.cards:hover .backFace{
+    transition:0.8s ease-in;
+    z-index: 2;
+    opacity: 1;
+    visibility: visible;
+}
+.frontFace{
+    position: absolute;
+    width:100%;
+    height:100%;
+}
+.card_img_container{
+    height:25vw; 
+    background-color:white;   
+}
+.card_img{
+    width:100%;
+    height:100%;
+}
+.card_txt{
+    padding:1rem 1.5rem 2rem  1.5rem;
+}
+.card_txt h2{
+    font-size: 2.1rem;
+    text-align: center;
+    padding-bottom: 1rem;
+    color:rgb(35, 71, 70);
+    word-spacing: 6px;
+    letter-spacing: 1px;
+}
+.backFace{
+    position: absolute;
+    width:100%;
+    height:100%;
+    background-color:rgb(191, 230, 231);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+
+}
+.discript{
+    font-size: 1.5rem;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.discript span{
+    color:teal;
+}
+
+/* Symptom Section */
+
+.Sympt_section{
+    width: 100%;
+    background-color: rgba(255, 193, 192, 0.493);
+    padding: 3rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+.Sympt_tit{
+    text-align: center;
+    font-size: 3rem;
+    color:rgb(163, 67, 149);
+    text-shadow: 3px 4px 6px rgb(232, 134, 245);
+    word-spacing: 1rem;
+    padding: 1rem 0;
+    border-top: 0.5rem solid pink;
+    border-bottom: 0.5rem solid pink;
+    width: 80vw;
+}
+
+
+
+.Sympt_text{
+    padding: 2rem 0 ;
+    border-bottom: 0.5rem solid pink;
+}
+
+.Sympt_text p{
+    padding:1rem 4rem;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    line-height: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: rgb(82, 82, 82);
+}
+
+.Sympt {
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    padding:2rem 0;
+    align-items: center;
+    border-bottom: 0.5rem solid pink;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+.Sympt h1{
+    font-size: 2.5rem;
+    padding: 0 0 3rem 0;
+    font-family: sans-serif;
+    color:rgb(66, 88, 110);
+
+}
+.Sympt ul li{
+    font-size: 1.5rem;
+    list-style: none;
+    color:rgb(46, 43, 43);
+    line-height: 3rem;
+    text-transform: capitalize;
+}
+.Sympt ul span{
+    color:rgb(206, 82, 82);
+    font-size: 1.3rem;
+}
+.Sympt_img_cont{
+    width:25vw;
+    border-radius: 20%;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 5px 5px 30px rgba(104, 79, 107, 0.76);
+
+}
+.Sympt_img{
+    width:100%;
+}
+.Sympt:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+.Vac_sec{
+    width:100%;
+    padding: 4rem 0;
+    box-shadow:inset 5px 5px 30px rgba(157, 246, 227, 0.65);
+    overflow: hidden;
+
+}
+.Vac_tit{
+    text-align: center;
+    font-size: 3.4rem;
+    word-spacing: 1rem;
+    padding: 0.7rem 0;
+    color:rgb(127, 212, 212);
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    border-top: 0.5rem solid rgb(157, 246, 246);
+    border-bottom: 0.5rem solid rgb(157, 246, 246);
+    margin:0 10vw;
+}
+
+.Vac_text p{
+    padding: 3rem 5rem ;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    line-height: 2.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color:rgb(107, 107, 107);
+
+}
+.Vac_text p span{
+    color: rgb(236, 35, 35);
+    font-style: italic;
+    font-weight: 400;
+    line-height: 3rem;
+
+}
+.Vacines_Main_container{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+
+}
+.vac_slid{
+    width: 28vw;
+    box-shadow: 2px 2px 10px #70fdfd96;
+    border-radius:10px;
+    max-height:29rem;
+    overflow-y: hidden;
+    transition: 1s ease-out 0.3s;
+
+}
+.Vacines_container{
+    width:100%;
+    height:100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.Vac_img_contain{
+    position: relative;
+
+    width: 100%;
+    height: 25rem;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+}
+
+.Vac_img{
+    width: 100%;
+    height: 100%;
+
+
+}
+.Vac_img_contain::before{
+    content: "";
+    position: absolute;
+    width: 120%;
+    height:100%;
+    left:-10%;
+    box-shadow: inset 0 0 100px 20px #0c0c0c;
+
+}
+
+.Vac_decpt h1{
+    font-size:2.5rem ;
+    text-align: center;
+    letter-spacing: 1px;
+    color:cyan;
+    line-height: 4rem;
+    background-color:rgb(59, 55, 55);
+    box-shadow: inset 0 0 10px #33ffff;
+
+}
+
+.Vac_decpt p{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 105, 105);
+    font-size:1.4rem ;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 2rem;
+    padding: 2rem;
+    border-radius:0 0 10px 10px;
+    box-shadow:inset 1px 1px 15px rgba(104, 79, 107, 0.76);
+}
+.vac_slid:hover {
+    max-height:65rem;
+}
+.contact_sec{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 5rem 0;
+    overflow: hidden;
+
+}
+.contact_sec .blue{
+    position: absolute;
+    background-color: rgba(135, 165, 246, 0.356);
+    clip-path: polygon(0 0,100% 0,100% 100%);
+    top: 0;
+    right: 0;
+    width: 90%;
+    height: 400px;
+}
+.contact_sec .pink{
+    position: absolute;
+    background-color: rgba(246, 135, 154, 0.294);
+    clip-path: polygon(100% 0 , 100% 100% , 0 100%);
+    right: 0;
+    bottom: 0;
+    width: 80%;
+    height: 500px;
+}
+.contact_Detail_cont{
+    position: relative;
+    width: 40%;
+    padding: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.contact_Detail_cont h3{
+    color: rgba(230, 51, 51, 0.863);
+    padding: 1rem 0;
+}
+.contact_Detail_cont h3 span{
+    background-color: rgba(230, 51, 51, 0.863);
+    border-radius: 5px;
+    color: white;
+    padding: 0.2rem 0.8rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-right: 0.5rem;
+}
+.contact_Detail_cont h1{
+    font-size: 2rem;
+    color: gray;
+}
+.contact_Detail_cont h2{
+    font-size: 1.2rem;
+    color: rgb(93, 93, 93);
+    padding-top: 1rem;
+}
+.contact_Detail_cont p{
+    padding:2rem 3rem 2rem 0;
+    line-height: 1.4rem;
+}
+.contact_Detail_cont p span{
+    color:rgb(40, 40, 245);
+    font-weight: 500;
+}
+.contact_Detail_cont ul {
+    padding: 1rem 0;
+}
+.contact_Detail_cont ul li{
+    line-height: 2rem;
+    list-style: none;
+}
+.contact_Detail_cont ul li span{
+    font-style: italic;
+    font-weight: 500;
+    color: blue;
+}
+.contact_container{
+    position: relative;
+    width: 40%;
+    background-color: white;
+    padding:2rem 1rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 0 0 10px gray;
+    border-radius: 10px;
+}
+.contact_container form{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+}
+.contact_container form h1{
+    font-size: 3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: gray;
+
+}
+.contact_container .name{
+    display: flex;
+    justify-content: space-between;
+
+}
+.contact_container .name input{
+    width: 49%;
+}
+.contact_container input , textarea {
+    padding:0.8rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    outline: none;
+    border-style: none;
+    border: 1px solid gray;
+}
+.contact_container input:focus ,textarea:focus{
+    border:2px solid cornflowerblue;
+}
+.contact_container .age{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.contact_container .age div:first-child{
+    width:65%;
+}
+
+.contact_container .age div h4{
+    font-size: 1rem;
+    color: rgb(45, 45, 68);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.contact_container select{
+    margin-top: 1rem;
+    padding:0.8rem 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid gray;
+    width:100%;
+
+}
+.contact_container .submitBtn{
+    position: relative;
+    width: 160px;
+    border-style: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: rgb(37, 162, 211);
+    letter-spacing: 1px;
+    outline: none;
+    padding:0.5rem ;
+    text-transform: uppercase;
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+    z-index: 1;
+    font-weight: 600;
+}
+.contact_container .submitBtn::before{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #003f3f;
+    /* background-color: rgb(130, 207, 238); */
+    top: 0;
+    left:0;
+    clip-path: polygon(0 100%, 100% 100% ,100% 100% ,0 100%);
+    transition:0.5s ease-out;
+    z-index: -1;
+
+}
+.contact_container  .submitBtn:hover{
+    transition: color 0.7s ease-out;
+    color:cyan;
+}
+.contact_container  .submitBtn:active{
+    transform: scale(110%);
+}
+.contact_container  .submitBtn:hover::before{
+    clip-path: polygon(0 0 ,100% 0 , 100% 100% ,0 100% );
+}
+.contact_container .submitBtn span{
+    font-size: 1.4rem;
+}
+
+/*Footer Section*/
+#Footer{
+    width:100%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    overflow: hidden;
+
+}
+.Foot_container{
+    width: 100%;
+    height:100%;
+    display: flex;
+    justify-content:space-evenly;
+    align-items:baseline;
+    gap:2rem;
+    flex-wrap: wrap;
+    padding: 3rem 0;
+}
+.Foot_boxs{
+    padding: 1rem;
+
+}
+.Foot_boxs h4{
+    color: rgb(95, 95, 95);
+    line-height: 4rem;
+}
+#Foot_box1{
+    width: 35%;
+}
+#Foot_box1 p{
+    color: dimgray;
+}
+
+#Foot_box1 h1{
+    font-size: 2rem;
+    line-height:3.8rem;
+}
+#Foot_box1 h1 img{
+    width: 1.6rem;
+    height: 1.6rem;
+}
+#Foot_box1 p{
+    line-height: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+#Foot_box4 ul{
+    display: flex;
+    justify-content: center;
+    gap:1rem;
+    padding: 2rem 0;
+}
+#Foot_box4 ul li a {
+    font-size: 1.5rem;
+}
+
+.Foot_container ul li{
+    list-style: none;
+    line-height: 2.2rem;
+}
+.Foot_container ul li a{
+    text-decoration: none;
+    color: rgb(54, 118, 129);
+    font-size: 0.9rem;
+    font-weight: 530;
+}
+.Foot_container ul li a:hover{
+    color: rgb(61, 61, 231);
+}
+.Foot_container ul li a:active{
+    color: rgb(231, 59, 59);
+
+}
+#Footer .desc{
+    width: 100%;
+    padding: 0 0 3rem 0;
+    display:flex ;
+    justify-content: center;
+}
+#Footer .desc p{
+    width: 80%;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    color:steelblue;
+    letter-spacing: 1px;
+    word-spacing: 0.1rem;
+
+}
+#Footer .copywrite{
+    width: 100%;
+    padding:0.9rem 1rem;
+    background-color:rgb(205, 213, 224);
+}
+#Footer .copywrite p{
+    color:steelblue;
+}
+#Footer .copywrite span{
+    color:rgb(36, 106, 163);
+}
+@media (max-width:958px) {
+    .dropDown{
+        display: block;
+        border-radius: 5px;
+        transition: all 5s ease;
+    }
+    
+    #Dropdown_menu{
+        position: absolute;
+        top:6.2rem;
+        left:-120%;
+        background-color: white;
+        width:100%;
+        flex-direction: column;
+        gap:0;
+        height: 100%;
+        transition: 1s ease-out;
+        z-index: 1000;
+
+    }
+
+    .closeNav{
+        left:0%;
+    }
+
+    .Head ul li{
+        display: block;
+        width: 100%;
+        line-height: 2rem;
+        text-align: center;
+
+    }
+    .Head ul li a{
+        display: block;
+        text-align: center;
+        margin:0.5rem 1rem;
+    }
+
+    .home , .about{
+        padding: 3rem 1rem;
+        flex-wrap: wrap;
+
+
+    }
+    .home_text , .about_text{
+        width: 100%;
+        text-align: center;
+
+    }
+    .home_text h1 ,.about_text h1{
+        font-size: 2.5rem;
+    }
+    .home_img_cont ,.about_img_cont{
+        width:100%;
+    }
+
+
+    .Intro {
+        flex-direction: column;
+        padding: 0.5rem;
+    }
+    .Int_text{
+        width: 100%;
+        text-align: center;
+    }
+    .Int_text h1{
+        font-size: 2.5rem;
+    }
+    .Int_text p{
+        font-size: 1.2rem;
+        word-spacing: 6px;
+        padding: 1rem 0.8rem;
+    }
+    .Doct_img_cont{
+        width:100%;
+    }
+    .cards{
+        width:40vw;
+    }
+    .card_img_container{
+        height:40vw;
+    }
+    .discript{
+        font-size: 1.4rem;
+    }
+
+    .Sympt_tit{
+        font-size: 2rem;
+    }
+    .Sympt_text p{
+        font-size: 1.1rem;
+        word-spacing: 6px;
+        padding: 1rem;
+    }
+    .Sympt{
+        padding:2rem 2rem;
+    }
+    .Sympt h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .Sympt ul li{
+        font-size: 1.5rem;
+    }
+    .Sympt_img_cont{
+        width:60vw;
+    }
+    .Vac_tit{
+        font-size: 2.5rem;
+    }
+    .Vac_text p{
+        font-size: 1.3rem;
+        padding:3rem 1.5rem;
+    }
+    .vac_slid{
+        width: 40vw;
+    }
+    .Vac_decpt p{
+        font-size: 1.2rem;
+    }
+    .contact_sec{
+        flex-direction: column;
+    }
+    .contact_sec .contact_Detail_cont{
+        width: 80%;
+        text-align: center;
+    }
+    .contact_sec .contact_container{
+        width: 80%;
+    }
+    .contact_container .age{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .contact_container .age div{
+        width: 100%;
+    }
+    .contact_container .age div:first-child{
+        width:100%;
+    }
+    .Foot_container{
+        gap: 1rem;
+    }
+    #Foot_box1{
+        width: 90%;
+    }
+       
+}
+@media (max-width:550px){
+    .logo h1{
+        font-size: 2rem;
+    }
+    .logo img{
+        height: 1.6rem;
+        animation:alp linear 4s infinite;
+    }
+    #DashBtn{
+        max-width:2rem;
+        height:2rem;
+        padding: 0.1rem;
+        position: fixed;
+        right: 0.5rem;
+        bottom: 0.5rem;
+        border-radius: 1rem;
+        transition: 0.2s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #DashBtn a{
+        font-size: 1.2rem;
+        padding: 0.5rem 0.4rem;
+        
+    }
+    #DashBtn a .DashBtntxt{
+        font-size: 0.8rem;
+        transition: 0.8s;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-left: 0.7rem;
+        font-weight: bold;
+        letter-spacing: 1px;
+        word-spacing: 0.2rem;
+        display: none;
+    }
+    .home_text h1 ,.about_text h1{
+        font-size: 1.8rem;
+    }
+    .card_section h1{
+        font-size: 2rem;
+    }
+    .cards{
+        width:90vw;
+        height: 25rem;
+    }
+    .card_img_container{
+        height:40vh;
+    }
+    .Sympt ul li{
+        font-size: 1.3rem;
+    }
+    .Sympt_img_cont{
+        width:100vw;
+    }
+    .vac_slid{
+        width: 80vw;
+    }
+    .Vac_decpt p{
+        font-size: 1.2rem;
+    }
+    .Vac_tit{
+        font-size: 2.2rem;
+        padding: 1rem 1rem;
+    }
+    .contact_sec .contact_Detail_cont{
+        width: 90%;
+        text-align: center;
+    }
+    .contact_sec .contact_container{
+        width: 90%;
+    }
+    .contact_container form h1{
+        font-size: 2.4rem;
+    }
+    #Foot_box1,#Foot_box4{
+        width: 80%;
+        border-bottom: 2px solid gray;
+    }
+    #Foot_box2 ,#Foot_box3,#Foot_box4{
+        text-align: center;
+    }
+    #Footer .copywrite p{
+        font-size: 0.8rem;
+        text-align: center;
+    }
 }

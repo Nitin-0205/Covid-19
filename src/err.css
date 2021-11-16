@@ -1,0 +1,17 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+.Error_component{
+    width:100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Error_component img{
+    width:40%;
+}
