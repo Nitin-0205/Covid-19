@@ -20,7 +20,7 @@ function App() {
   return (
     <div className="App">
       <Switch>
-        <Route exact path='/'>
+        <Route>
           <Header />
           <Home />
           <About />
