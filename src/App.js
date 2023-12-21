@@ -33,7 +33,7 @@ function App() {
           <DashBtn />
         </Route>
         <Route path = '/Dash' component={Dash}></Route>
-        <Route component={Error_Page}></Route>
+    //    <Route component={Error_Page}></Route>
 
       </Switch>
     </div>
