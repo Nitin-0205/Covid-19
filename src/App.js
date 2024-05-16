@@ -20,7 +20,7 @@ function App() {
   return (
     <div className="App">
       <Switch>
-        <Route>
+        <Route path = '/'>
           <Header />
           <Home />
           <About />
@@ -33,7 +33,7 @@ function App() {
           <DashBtn />
         </Route>
         <Route path = '/Dash' component={Dash}></Route>
-    //    <Route component={Error_Page}></Route>
+        <Route path = '*' component={Error_Page}></Route>
 
       </Switch>
     </div>
